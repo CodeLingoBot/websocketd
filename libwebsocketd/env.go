@@ -114,7 +114,7 @@ func createEnv(handler *WebsocketdHandler, req *http.Request, log *LogScope) []s
 	return env
 }
 
-// Adapted from net/http/header.go
+// appendEnv; Adapted from net/http/header.go
 func appendEnv(env []string, k string, v ...string) []string {
 	if len(v) == 0 {
 		return env
